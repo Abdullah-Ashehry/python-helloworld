@@ -4,7 +4,7 @@ metadata:
   labels:
     app: {{ .Values.image.repository }}
     tag: {{ .Values.image.tag }}
-  name: "{{ printf \"%s-%s\" .Values.image.repository .Values.image.tag }}"
+  name: {{ .Values.configmap.data }}
   namespace: {{ .Values.namespace.name }}
 spec:
   ports:

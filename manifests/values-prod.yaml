@@ -18,3 +18,7 @@ replicaCount: 2
 resources:
   CPU: 70m
   memory: 256Mi
+
+
+configmap:
+  data: "version: 1.17.0"

@@ -3,5 +3,5 @@ data:
   version: {{ .Values.image.tag }}
 kind: ConfigMap
 metadata:
-  name: "{{ printf \"%s-%s\" .Values.image.repository .Values.image.tag }}"
+  name: {{ .Values.configmap.data }}
   namespace: {{ .Values.namespace.name }}
