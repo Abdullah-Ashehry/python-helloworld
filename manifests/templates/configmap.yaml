@@ -3,5 +3,5 @@ data:
   version: {{ .Values.image.tag }}
 kind: ConfigMap
 metadata:
-  name: {{ .Values.configmap.data }}
+  name: "nginx-version"
   namespace: {{ .Values.namespace.name }}
