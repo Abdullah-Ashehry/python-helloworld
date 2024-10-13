@@ -15,7 +15,7 @@ image:
 replicaCount: 1
 
 resources:
-  CPU: 50m
+  cpu: 50m
   memory: 128Mi
 
 configmap:
