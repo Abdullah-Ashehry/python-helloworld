@@ -4,7 +4,7 @@ metadata:
   labels:
     app: python-helloworld
   name: python-helloworld
-  namespace: {{ .Values.namespace.name }} 
+  namespace: "staging"
 spec:
   replicas: {{ .Values.replicaCount }} 
   selector:
