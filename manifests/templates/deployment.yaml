@@ -24,7 +24,7 @@ spec:
         tag: {{ .Values.image.tag }}
     spec:
       containers:
-      - image: {{ .Values.image.repository }} : {{ .Values.image.tag }}
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.imagePullPolicy }}
         name: {{ .Values.configmap.data }}
         resources:
